@@ -15,6 +15,6 @@ def decode_word(words)
 end
 
 def decode_message(message)
-  message.strip.split('   ').map { |message| decode_word(message) }.join(' ')
+  message.strip.split('   ').map { |messages| decode_word(messages) }.join(' ')
 end
 puts decode_message('-- -.--   -. .- -- .')
