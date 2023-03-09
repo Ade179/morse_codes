@@ -1,4 +1,4 @@
-morse_char = {
+MORSE_CODES = {
   '.-' => 'A',
   '-...' => 'B',
   '-.-.' => 'C',
@@ -25,10 +25,10 @@ morse_char = {
   '-..-' => 'X',
   '-.--' => 'Y',
   '--..' => 'Z'
-}
+}.freeze
 
 def decode_chars(char)
-  morse_char[char]
+  MORSE_CODES[char]
 end
 
 def decode_word(words)
